@@ -121,6 +121,7 @@ class KMeansOptimN(ClusterMixin, BaseEstimator):
 
         elif self.n_clusters is None:
             n_clusters, _, _ = self.get_optimal_clusters(X, measure=measure, cluster_range=cluster_range)
+            self.n_clusters = n_clusters
             self.KMeans.set_params(**{
                 'n_clusters': n_clusters
             })
