@@ -5,7 +5,7 @@ A sklearn KMeans that automatically finds the optimal number of clusters based o
 ## Usage:
 Use inplace of any KMeans model.
 ```py
-opt_model = OptimKMeans()
+opt_model = KMeansOptimN()
 opt_model.fit(X)
 preds = opt_model.predict()
 ```
